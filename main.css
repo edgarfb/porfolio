@@ -261,7 +261,11 @@ input {
   background-color: crimson;
   color: white;
   font-weight: 550;
-} 
+}
+.btn:hover{
+  background-color: orangered;
+  transition: .3s linear;
+}
 
 .section-2{
   width: 100%;
