@@ -4,6 +4,7 @@
   list-style: none;
   text-decoration: none;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -261,4 +262,134 @@ input {
   color: white;
   font-weight: 550;
 } 
+
+.section-2{
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  background-color: rgb(22, 22, 46);
+}
+
+.my-skills{
+  text-align: center;
+}
+.my-skills h1{
+  color: crimson;
+}
+.my-skills .line1{
+  width: 70px;
+  margin: 1rem auto;
+  height: 3px;
+  background-color: crimson;
+  border: none;
+}
+.new-box{
+  margin-top: 60px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 200px;
+}
+.box1{
+  width: 500px;
+  text-align: left;
+}
+.box1 h1{
+  color: #fff;
+}
+.box1 p{
+  color: #fff;
+  margin-top: 20px;
+  line-height: 30px;
+}
+.box1 .btn{
+  margin-top: 20px;
+}
+.box2{
+  width: 500px;
+  line-height: 25px;
+}
+.box2 .html{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+h5{
+  color: #fff;
+}
+.general-line{
+  position: relative;
+  margin-bottom: 15px;
+  height: 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+}
+.box2 .html-line::after{
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 90%;
+  background-color: orangered;
+  top: 0;
+  left: 0;
+}
+.box2 .css{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.box2 .css-line::after{
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 85%;
+  background-color: royalblue;
+  top: 0;
+  left: 0;
+}
+.box2 .bootstrap{
+  display: flex;
+  justify-content: space-between;
+}
+.box2 .bootstrap-line::after{
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 70%;
+  background-color: purple;
+  top: 0;
+  left: 0;
+}
+
+.box2 .javascript{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.box2 .javascript-line::after{
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 60%;
+  background-color: orange;
+  top: 0;
+  left: 0;
+}
+
+.box2 .react{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.box2 .react-line::after{
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 50%;
+  background-color: cyan;
+  top: 0;
+  left: 0;
+}
 

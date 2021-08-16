@@ -31,7 +31,24 @@
   }
   .text p{
     font-size: 14px;
-  } 
+  }
+  .new-box{
+    width: 900px;
+    margin-left: 50px;
+  }
+  .box1{
+    width: 400px;
+  }
+  .box1 h1{
+    font-size: 20px;
+  }
+  .box1 p{
+    font-size: 14px;
+  }
+  .box2{
+    width: 400px;
+  }
+
 }
 @media screen and (max-width: 768px){
   nav ul li a{
@@ -106,7 +123,28 @@
   }
   .text p{
     font-size: 12px;
-  } 
+  }
+  /* .new-box{
+    width: 700px;
+    margin-left: 40px;
+  }
+  .box1{
+    width: 300px;
+  }
+  .box1 h1{
+    font-size: 20px;
+  }
+  .box1 p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  .box2{
+    width: 350px;
+  }
+  .box1 .btn{
+    padding: 5px 15px;
+  }  */
 @media screen and (max-width: 425px){
   nav .logo{
     margin-left: 160px;
