@@ -1,0 +1,152 @@
+@media screen and (max-width: 1024px){
+  .content{
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+  .content h1{
+    font-size: 40px
+  }
+  .content .job{
+    font-size: 22px;
+  }
+  .content .info{
+    font-size: 18px;
+  } 
+}
+@media screen and (max-width: 768px){
+  nav ul li a{
+    padding: 0px 15px;
+    font-size: 16px;
+  }
+  nav .logo{
+    font-size: 18px;
+    padding-top: 25px;
+  }
+  nav ul ul li a{
+    line-height: 30px;
+    font-size: 12px;
+    background-color: crimson;
+  }
+  .content{
+    width: 750px;
+    margin-left: 20px;
+    margin-top: 70px;
+  }
+  .content h1{
+    font-size: 30px
+  }
+  .content .job{
+    font-size: 18px;
+  }
+  .content .info{
+    font-size: 12px;
+  }
+  .content .line{
+    width: 30px;
+    border: 2px dashed yellow;
+  }
+  .hero{
+    margin-left: 360px;
+  } 
+  #searchBox{
+    padding: 3px;
+    width: 250px;
+  }
+  #myIcon{
+    width: 40px;
+    height: 40px;
+  }
+  input{
+    font-size: 12px;
+  }
+  .active input{
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 425px){
+  nav .logo{
+    margin-left: 160px;
+    font-size: 22px
+  }
+  nav ul li a{
+    padding: 0px 10px;
+    font-size: 13px;
+  }
+  nav ul li:hover > ul{
+    top: 130px;
+  }
+  nav ul ul li a{
+    line-height: 25px;
+  }
+  .content{
+    width: 420px;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+  .content h1{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .content .job{
+    font-size: 16px;
+  }
+  .content .info{
+    font-size: 10px;
+  }
+  .content .line{
+    width: 30px;
+    border: 2px dashed yellow;
+  }
+  .hero{
+    margin-left: 210px;
+  } 
+}
+@media screen and (max-width: 375px){
+  nav .logo{
+    margin-left: 130px;
+  }
+  nav ul li a{
+    padding: 0px 8px;
+    font-size: 12px;
+  }
+  .content{
+    width: 370px;
+  }
+  .hero{
+    margin-left: 180px;
+  }
+  #searchBox{
+    width: 220px;
+  }
+  .active input{
+    width: 120px;
+    padding-right: 0px;
+  }
+  .active #search-icon{
+    margin-right: 20px;
+  } 
+}
+@media screen and (max-width: 320px){
+  * {
+    outline: 1px solid red;
+  }
+  nav .logo{
+    margin-left: 110px;
+  }
+  nav ul li a{
+    padding: 0px 5px;
+    font-size: 10px;
+  }
+  .content{
+    width: 320px;
+  }
+  .content h1{
+    letter-spacing: 1px;
+  }
+  .content .info{
+    font-size: 10px;
+  }
+  .hero{
+    margin-left: 160px;
+  }
+}

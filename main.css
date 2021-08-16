@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.mycitysocial.com/wp-content/uploads/2020/01/banner-shape.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body{
+  overflow: hidden;
+}
+
+nav{
+  height: 70px;
+  opacity: 100%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+
+nav .logo{
+  float: left;
+  margin-left: 30px;
+  font-size: 25px;
+  padding: 20px;
+  font-weight: 550;
+  color: yellow;
+}
+
+.logo .dev{
+  color: white;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  display: block;
+  padding: 0px 25px;
+  line-height: 70px;
+  font-size: 18px;
+}
+nav ul li a:hover,
+nav .logo:hover,
+nav ul li a.active{
+  color:yellow;
+}
+nav ul li a.active::after{
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: yellow;
+  transition: 0.4s;
+  margin-top: -15px;
+}
+.border-bottom::after{
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: yellow;
+  transition: 0.4s;
+  margin-top: -15px;
+}
+.border-bottom:hover::after{
+  width: 60%
+}
+
+
+nav ul ul {
+  position: absolute;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  opacity: 1;
+  top: 70px;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+
+.content{
+  display: block;
+  width: 800px;
+  height: 400px;
+  margin-left: 450px;
+  margin-top: 130px;
+  text-align: center;
+}
+.content h1{
+  font-size: 50px;
+  letter-spacing: 5px;
+  background-image: linear-gradient(to right, lightgreen, yellowgreen, pink, lightblue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 4s infinite alternate-reverse;
+}
+@keyframes animatedText{
+  to{
+    background-position: 100%;
+  }
+}
+.content .job{
+  font-size: 30px;
+  padding-top: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: yellow;
+  margin-bottom: 15px;
+}
+.content .info{
+  color: white;
+  padding-top: 10px;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.content .line{
+  width: 40px;
+  margin: auto;
+  border: 4px dashed yellow;
+}
+.hero{
+  width: 5%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 380px;
+  margin-top: 50px;
+}
+
+#searchBox{
+  border-radius: 55px;
+  padding: 5px;
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0);
+}
+
+#myIcon{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+#search-icon{
+  visibility: hidden;
+  width: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+input{
+  font-size: 18px;
+  width: 0px;
+  border: 0;
+  background: transparent;
+  color: black;
+  outline: none;
+  transition: 2s;
+}
+
+.active input{
+  width: 300px;
+  padding: 10px 20px;
+}
+
+.active #search-icon{
+  color: black;
+  margin-right: 25px;
+  visibility: visible;
+  width: 10px;
+}
