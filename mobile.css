@@ -170,7 +170,7 @@
     font-size: 10px;
   }
   .btn{
-    margin-left: 90px;
+    margin-left: 120px;
     margin-top: 10px;
     padding: 5px 15px;
     font-size: 10px;
@@ -211,6 +211,9 @@
     width: 300px;
     height: 170px;
     margin-right: 0;
+  }
+  .btn{
+    margin-left: 120px;
   }  
 }
 @media screen and (max-width: 320px){
@@ -252,5 +255,8 @@
   }
   .text h1{
     font-size: 12px;
-  }  
+  }
+  .btn{
+    margin-left: 90px;
+  }    
 }
