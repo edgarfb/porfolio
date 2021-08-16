@@ -94,7 +94,7 @@ nav ul li:hover > ul{
   transition: .3s linear;
 }
 nav ul ul li{
-  width: 150px;
+  /* width: 120px; */
   display: list-item;
   position: relative;
   border-top: none;

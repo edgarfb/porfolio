@@ -127,14 +127,11 @@
   } 
 }
 @media screen and (max-width: 320px){
-  * {
-    outline: 1px solid red;
-  }
   nav .logo{
     margin-left: 110px;
   }
   nav ul li a{
-    padding: 0px 5px;
+    /* padding: 0px 5px; */
     font-size: 10px;
   }
   .content{
