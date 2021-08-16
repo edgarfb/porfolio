@@ -11,6 +11,26 @@
   }
   .content .info{
     font-size: 18px;
+  }
+  .about{
+    margin-top: 10px;
+  }
+  .about .image{
+    width: 400px;
+  }
+  .image .my-img{
+    width: 400px;
+  }
+  .text{
+    width: 400px;
+    line-height: 20px;
+    text-align: left;
+  }
+  .text h1{
+    font-size: 20px;
+  }
+  .text p{
+    font-size: 14px;
   } 
 }
 @media screen and (max-width: 768px){
@@ -59,10 +79,34 @@
   input{
     font-size: 12px;
   }
-  .active input{
-    padding: 10px;
+  .about{
+    padding-top: 30px;
   }
-}
+  .image-text{
+    margin-top: 30px;
+  }
+  .about .image{
+    width: 300px;
+    margin: auto;
+    margin-right: 0px;
+  }
+  .image .my-img{
+    width: 300px;
+    height: 270px
+  }
+  .text{
+    width: 300px;
+    text-align: justify;
+    margin: 20px auto;
+  }
+  }
+  .text h1{
+    text-align: left;
+    font-size: 16px
+  }
+  .text p{
+    font-size: 12px;
+  } 
 @media screen and (max-width: 425px){
   nav .logo{
     margin-left: 160px;
@@ -99,7 +143,38 @@
   }
   .hero{
     margin-left: 210px;
+  }
+  .about{
+    width: 420px;
+  }
+  .about h1{
+    font-size: 18px;
+  }
+  .image-text{
+    display: block;
+  }
+  .about .image{
+    width: 300px;
+    margin-right: 50px;
+  }
+  .image .my-img{
+    width: 300px;
+    height: 170px;
+    margin-right: 0;
   } 
+  .text h1{
+    text-align: center;
+    font-size: 14px;
+  }
+  .text p{
+    font-size: 10px;
+  }
+  .btn{
+    margin-left: 90px;
+    margin-top: 10px;
+    padding: 5px 15px;
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 375px){
   nav .logo{
@@ -124,9 +199,24 @@
   }
   .active #search-icon{
     margin-right: 20px;
-  } 
+  }
+  .about{
+    width: 370px;
+  }
+  .about .image{
+    width: 300px;
+    margin-right: 35px;
+  }
+  .image .my-img{
+    width: 300px;
+    height: 170px;
+    margin-right: 0;
+  }  
 }
 @media screen and (max-width: 320px){
+  *{
+    outline: 1px solid red 
+  }
   nav .logo{
     margin-left: 110px;
   }
@@ -146,4 +236,24 @@
   .hero{
     margin-left: 160px;
   }
+  .about{
+    width: 320px;
+  }
+  .about .image{
+    width: 250px;
+    margin-right: 35px;
+  }
+  .image .my-img{
+    width: 240px;
+    height: 170px;
+    margin-right: 0;
+  }
+  .text{
+    width: 250px;
+    text-align: justify;
+    margin: 20px auto;
+  }
+  .text h1{
+    font-size: 12px;
+  }  
 }
