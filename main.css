@@ -278,7 +278,7 @@ input {
   text-align: center;
 }
 .my-skills h1{
-  color: crimson;
+  color: #fff;
 }
 .my-skills .line1{
   width: 70px;
@@ -397,3 +397,203 @@ h5{
   left: 0;
 }
 
+.section-3{
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.wrapper{
+  width: 1200px;
+  margin: 1rem auto;
+}
+.wrapper h1{
+  text-align: center;
+  color: crimson;
+}
+.wrapper .line1{
+  width: 70px;
+  margin: 1rem auto;
+  border: none;
+  height: 3px;
+  background-color: crimson
+}
+.wrapper p{
+  text-align: center;
+}
+.service-pages{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.first-service{
+  box-shadow: 0 0 15px lightgray;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.first-service:hover{
+  background-color: gray;
+  color: #fff;
+  transition: .4s ease-in-out;
+}
+.first-service .fa-youtube{
+  font-size: 50px;
+  color: crimson;
+}
+.first-service h3{
+  margin-top: 15px;
+}
+.first-service p{
+  text-align: justify;
+  margin-top: 15px;
+  line-height: 25px
+}
+.second-service{
+  box-shadow: 0 0 15px lightgray;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.second-service:hover{
+  background-color: gray;
+  color: #fff;
+  transition: .4s ease-in-out;
+}
+.second-service .fa-code{
+  font-size: 50px;
+  color: crimson;
+}
+.second-service h3{
+  margin-top: 15px;
+}
+.second-service p{
+  text-align: justify;
+  margin-top: 15px;
+  line-height: 25px
+}
+
+.third-service{
+  box-shadow: 0 0 15px lightgray;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.third-service:hover{
+  background-color: gray;
+  color: #fff;
+  transition: .4s ease-in-out;
+}
+.third-service .fa-paint-brush{
+  font-size: 50px;
+  color: crimson;
+}
+.third-service h3{
+  margin-top: 15px;
+}
+.third-service p{
+  text-align: justify;
+  margin-top: 15px;
+  line-height: 25px
+}
+
+footer{
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(7, 7, 26)
+}
+
+.contact-page{
+  width: 800px;
+  margin: auto;
+  padding-top: 40px;
+}
+.contact-page h1{
+  text-align: center;
+  color: #fff;
+}
+.contact-page .line1{
+  width: 70px; 
+  margin: 0.5rem auto;
+  height: 3px;
+  border: none;
+  background-color: crimson;
+}
+.contacts{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.telegram{
+  background-color: #fff;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 100px;
+  height: 60px
+}
+.telegram .fa-telegram{
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: crimson;
+}
+.phone{
+  background-color: #fff;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 100px;
+  height: 60px
+}
+.phone .fa-phone{
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: crimson;
+}
+
+.email{
+  background-color: #fff;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 100px;
+  height: 60px
+}
+.email .fa-envelope-open{
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: crimson;
+}
+.website{
+  background-color: #fff;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 100px;
+  height: 60px
+}
+.website .fa-globe{
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: crimson;
+}
+.phone h4,
+.email h4,
+.website h4,
+.telegram h4{
+  font-size: 12px;
+}
+.phone:hover,
+.email:hover,
+.website:hover, 
+.telegram:hover{
+  background-color: cyan;
+  transition: 0.4s ease-in-out;
+  transform: scale(1.1);
+}
