@@ -412,7 +412,7 @@
     font-size: 12px;
   }
   .content{
-    width: 370px;
+    width: 360px;
   }
   .hero{
     margin-left: 180px;
@@ -428,7 +428,8 @@
     margin-right: 20px;
   }
   .about{
-    width: 370px;
+    width: 360px;
+    margin: auto;
   }
   .about .image{
     width: 300px;

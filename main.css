@@ -116,17 +116,17 @@ nav ul ul li a {
   letter-spacing: 5px;
   background-image: linear-gradient(
     to right,
-    lightgreen,
-    yellowgreen,
-    pink,
-    lightblue
+    rgb(53, 218, 53),
+    rgb(252, 255, 55),
+    rgb(47, 172, 255),
+    rgb(26, 198, 255)
   );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   background-size: 300%;
   background-position: -100%;
-  animation: animatedText 4s infinite alternate-reverse;
+  animation: animatedText 2s infinite alternate-reverse;
 }
 @keyframes animatedText {
   to {
@@ -152,9 +152,11 @@ nav ul ul li a {
   font-size: 20px;
 }
 .content .line {
-  width: 40px;
+  width: 70px;
   margin: auto;
-  border: 4px dashed yellow;
+  height: 4px;
+  border: none;
+  background-color: yellow
 }
 .hero {
   width: 5%;
@@ -288,8 +290,8 @@ input {
   border: none;
 }
 .new-box{
-  margin-top: 60px;
-  width: 1200px;
+  /* margin-top: 60px;
+  width: 1200px; */
   display: flex;
   justify-content: space-around;
   margin-left: 200px;
@@ -440,6 +442,7 @@ h5{
   transition: .4s ease-in-out;
 }
 .first-service .fa-youtube{
+  cursor: pointer;
   font-size: 50px;
   color: crimson;
 }
@@ -465,6 +468,7 @@ h5{
   transition: .4s ease-in-out;
 }
 .second-service .fa-code{
+  cursor: pointer;
   font-size: 50px;
   color: crimson;
 }
@@ -493,6 +497,7 @@ h5{
 .third-service .fa-paint-brush{
   font-size: 50px;
   color: crimson;
+  cursor: pointer;
 }
 .third-service h3{
   margin-top: 15px;
