@@ -3,36 +3,38 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: sans-serif;
   scroll-behavior: smooth;
+  /* outline: 1px solid red; */
+
+  /* This prop is very important and you would have to use it always */
+  box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif;
+}
+
+.container {
+  min-width: 300px;
+}
+
+
 header {
-  width: 100%;
   height: 100vh;
   background-image: url("https://www.mycitysocial.com/wp-content/uploads/2020/01/banner-shape.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  /* padding: 1rem; */
 }
 
-/* body{
-  overflow: hidden;
-} */
+
 
 nav {
-  height: 70px;
-  opacity: 100%;
+  padding: 1rem;
 }
-
-nav ul {
-  float: right;
-  margin-right: 30px;
-}
-
 nav .logo {
-  float: left;
-  margin-left: 30px;
+  text-align: center;
   font-size: 25px;
   padding: 20px;
   font-weight: 550;
@@ -42,17 +44,17 @@ nav .logo {
 .logo .dev {
   color: white;
 }
-
-nav ul li {
-  display: inline-block;
+nav ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 nav ul li a {
   color: white;
-  display: block;
-  padding: 0px 25px;
+  /* display: block;
+  padding: 0px 25px; */
   line-height: 70px;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 nav ul li a:hover,
 nav .logo:hover,
@@ -94,7 +96,6 @@ nav ul li:hover > ul {
   transition: 0.3s linear;
 }
 nav ul ul li {
-  /* width: 120px; */
   display: list-item;
   position: relative;
   border-top: none;
@@ -104,15 +105,16 @@ nav ul ul li a {
 }
 
 .content {
-  display: block;
+  /* display: block;
   width: 800px;
   height: 400px;
   margin-left: 450px;
-  margin-top: 130px;
+  margin-top: 130px; */
   text-align: center;
 }
 .content h1 {
-  font-size: 50px;
+  /* font-size: 50px; */
+  margin-top: 2rem;
   letter-spacing: 5px;
   background-image: linear-gradient(
     to right,
@@ -202,7 +204,7 @@ input {
 }
 
 .active input {
-  width: 300px;
+  /*width: 300px;*/
   padding: 10px 20px;
 }
 
@@ -212,10 +214,12 @@ input {
   visibility: visible;
   width: 10px;
 }
-
+.section-1, .section-2, .section-3 {
+  padding: 1rem;
+}
 .section-1 {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .about{
   padding-top: 100px;
@@ -233,28 +237,35 @@ input {
 }
 .image-text{
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   margin-top: 60px;
 }
 .image{
-  width: 600px;
+  width: 100%;
   margin-right: -70px;
 }
 .image .my-img{
-  width: 600px;
+  /* width: 600px; */
+  width: 100%;
   border-radius: 10px;
 }
 .text{
   margin-top: 10px;
   text-align: left;
-  width: 600px;
+  /* width: 600px; */
   line-height: 30px;
 }
 .text h1{
   color: black;
+  font-size: .9rem;
+  text-align: center;
 }
 .text p{
   margin-top: 15px;
+  font-size: .7rem;
+    text-align: justify;
+    line-height: 20px;
+}
 }
 .btn{
   margin-top: 15px;
@@ -271,13 +282,15 @@ input {
 
 .section-2{
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 100px;
   background-color: rgb(22, 22, 46);
 }
 
 .my-skills{
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .my-skills h1{
   color: #fff;
@@ -293,17 +306,20 @@ input {
   /* margin-top: 60px;
   width: 1200px; */
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  margin-left: 200px;
+  /* margin-left: 200px; */
 }
 .box1{
-  width: 500px;
+  /* width: 500px; */
   text-align: left;
 }
 .box1 h1{
   color: #fff;
+  text-align: center;
 }
 .box1 p{
+  text-align: justify;
   color: #fff;
   margin-top: 20px;
   line-height: 30px;
@@ -312,7 +328,7 @@ input {
   margin-top: 20px;
 }
 .box2{
-  width: 500px;
+  /* width: 500px; */
   line-height: 25px;
 }
 .box2 .html{
@@ -401,12 +417,12 @@ h5{
 
 .section-3{
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 50px;
 }
 
 .wrapper{
-  width: 1200px;
+  /* width: 1200px; */
   margin: 1rem auto;
 }
 .wrapper h1{
@@ -425,15 +441,16 @@ h5{
 }
 .service-pages{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 50px;
 }
 .first-service{
   box-shadow: 0 0 15px lightgray;
-  width: 300px;
+  /*width: 300px;*/
   height: 300px;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
   cursor: pointer;
 }
 .first-service:hover{
@@ -454,12 +471,13 @@ h5{
   margin-top: 15px;
   line-height: 25px
 }
-.second-service{
+.first-service, .second-service, .third-service {
   box-shadow: 0 0 15px lightgray;
-  width: 300px;
+  /*width: 300px;*/
   height: 300px;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
   cursor: pointer;
 }
 .second-service:hover{
@@ -481,14 +499,6 @@ h5{
   line-height: 25px
 }
 
-.third-service{
-  box-shadow: 0 0 15px lightgray;
-  width: 300px;
-  height: 300px;
-  text-align: center;
-  padding: 1.5rem;
-  cursor: pointer;
-}
 .third-service:hover{
   background-color: gray;
   color: #fff;
@@ -510,12 +520,12 @@ h5{
 
 footer{
   width: 100%;
-  height: 50vh;
+  /* height: 50vh; */
   background-color: rgb(7, 7, 26)
 }
 
 .contact-page{
-  width: 800px;
+  /* width: 800px; */
   margin: auto;
   padding-top: 40px;
 }
@@ -532,8 +542,14 @@ footer{
 }
 .contacts{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
   margin-top: 50px;
+}
+.contacts div {
+  margin-bottom: 1rem;
+  height: auto;
 }
 .telegram{
   background-color: #fff;
@@ -602,3 +618,4 @@ footer{
   transition: 0.4s ease-in-out;
   transform: scale(1.1);
 }
+*/
